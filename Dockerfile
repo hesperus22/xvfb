@@ -10,6 +10,8 @@ VOLUME /tmp/.X11-unix
 
 ADD start.sh /start.sh
 
+RUN chmod +x start.sh
+
 ENTRYPOINT ["/start.sh"]
 
 CMD ["1024x768x24+32"]
